@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WaterFall</title>
+    <style type="text/css">
+        *{
+            padding: 0; 
+            border: 0;
+            margin: 0;
+        }
+        .container{
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            text-align: center;
+            background: #fdfdfd;
+        }
+        .container .card{
+            display: block;
+            position: absolute;
+            width: 200px;
+            height: auto;
+            padding: 12px;
+            border: 1px solid #ccc;
+            background: #fff;
+            border-radius: 3px;
+            transition: top .8s ease-in-out,left .8s ease-in-out;
+            -webkit-transition: top .8s ease-in-out,left .8s ease-in-out;
+            -moz-transition: top .8s ease-in-out,left .8s ease-in-out;
+            -o-transition: top .8s ease-in-out,left .8s ease-in-out;
+        }
+        .waterfall .card p{
+            display: none;
+        }
+        .container .waterfall{
+            display: inline-block;
+        }
+        .container .card img{
+            display: block;
+            width: 200px;
+            background: #eee;
+        }
+        .container .card p{
+            display: block;
+            text-align: left;
+            font-weight: 600;
+            padding-top: 5px;
+            font-family: tahoma,arial,sans-serif;
+            min-width: 30px;
+        }
+    </style>
+</head>
+<body>
+	<div class="container">
+        <div class="waterfall" id="waterfall">
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/waterfall.js"></script>
+    <script type="text/javascript">
+        waterfall.init();
+    </script>
+</body>
+</html>
